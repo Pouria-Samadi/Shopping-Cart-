@@ -3,17 +3,23 @@ import Shop from "./pages/Shop/Shop"
 import Cart from "./pages/Cart/CArt"
 import Navbar from "./Components/Navbar"
 import "./App.css";
+import ShopContextProvider from "./Context/Shop-Context";
+
 
 function App() {
   return (
     <div className="App">
-      <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Shop />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </Router>
+       <ShopContextProvider>
+       <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Shop />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </Router>
+       </ShopContextProvider>
+        
+     
     </div>
   )
 }
