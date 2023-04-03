@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Shop from "./pages/Shop/Shop"
 import Cart from "./pages/Cart/CArt"
 import Navbar from "./Components/Navbar"
+import "./App.css";
 
 function App() {
   return (
