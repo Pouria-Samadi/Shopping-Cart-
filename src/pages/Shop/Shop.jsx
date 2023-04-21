@@ -11,11 +11,11 @@ const Shop = () => {
 
       <div className="products">
         {PRODUCTS.map((product) => (
-          <Product data={product} key={product.id}/>
+          <Product data={product} key={product.id} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Shop
+export default Shop;
